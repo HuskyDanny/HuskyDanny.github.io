@@ -231,12 +231,6 @@ header {
   border-radius: 50%;
 }
 
-.intro-left {
-  margin-right: 5%;
-  width: 50%;
-  height: 70%;
-}
-
 .intro-left span {
   padding-left: 30px;
 }
@@ -290,6 +284,9 @@ header {
   }
   .about-me {
     height: 50vh;
+  }
+  .intro p {
+    font-size: 14px;
   }
 }
 
