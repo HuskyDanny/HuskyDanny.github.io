@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Junchen's Porfolio</title>
-
-    <link rel="stylesheet" type="text/css" href="css/util.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/util.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" href="./css/style_vendor.css" />
     <link rel="stylesheet" href="./css/Grid.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -17,16 +21,23 @@
     <header>
       <div class="navigation-bar">
         <div class="page-btn">
-          
           <a class="btn btn-me" href="#about-me">About Me</a>
           <a class="btn btn-project" href="#projects">Projects</a>
-          <a class="btn btn-resume" href="./download/JunchenPan_ExtraHop_Resume.pdf" target="_blank">Resume</a>
+          <a
+            class="btn btn-resume"
+            href="./download/JunchenPan_ExtraHop_Resume.pdf"
+            target="_blank"
+            >Resume</a
+          >
           <a class="btn btn-home" href="#contact">Contact</a>
         </div>
         <ul class="social">
-  
           <li>
-            <a href="https://www.linkedin.com/in/jcp18" class="card-icon-link" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/jcp18"
+              class="card-icon-link"
+              target="_blank"
+            >
               <i class="fab fa-linkedin"></i>
             </a>
           </li>
@@ -36,12 +47,20 @@
             </a>
           </li>
           <li>
-            <a href="https://github.com/HuskyDanny" class="card-icon-link" target="_blank">
+            <a
+              href="https://github.com/HuskyDanny"
+              class="card-icon-link"
+              target="_blank"
+            >
               <i class="fab fa-github"></i>
             </a>
           </li>
           <li>
-            <a href="https://www.kaggle.com/junchp" class="card-icon-link" target="_blank">
+            <a
+              href="https://www.kaggle.com/junchp"
+              class="card-icon-link"
+              target="_blank"
+            >
               <i class="fab fa-kaggle"></i>
             </a>
           </li>
@@ -56,25 +75,35 @@
       </div>
     </header>
 
-    <section class="about-me" id="about-me">
-      <h1 class= 'colorlib-heading animate-box'>About-Me</h1>
-      <div class="intro">
-        <p>
-          Thank you for visiting my page, I am actively looking for <strong>full stack</strong> 
-          or <strong>backend</strong> developer job. I am very familiar with
-          <strong>Python/Flask</strong> as backend stack, I created three backend service
-          project using Flask. Now I am learning <strong>front-end stack</strong> as well, I love learning by doing,
-          this page , for example, was made with HTML/CSS/Javascript. I am currently creating some fun web application using
-          <strong>React</strong>. My final goal is to create a fully functional web application that functions as a snippets 
-          learning and sharing platform. During professional works, I learned <strong>Docker, Git, Bash and Deployment skills</strong>.
-        </p>
+    <section class="block" id="about-me">
+      <h1 class="colorlib-heading animate-box">About-Me</h1>
+      <div
+        class="card bg-light mb-3"
+        style="max-width:80%;margin-left:auto;margin-right:auto;"
+      >
+        <div class="card-header">Hello, I am Junchen</div>
+        <div class="card-body">
+          <p class="card-text">
+            Thank you for visiting my page, I am actively looking for
+            <strong>full stack</strong> or <strong>backend</strong> developer
+            job. I am very familiar with <strong>Python/Flask</strong> as
+            backend stack, I created three backend service project using Flask.
+            Now I am learning <strong>front-end stack</strong> as well, I love
+            learning by doing, this page , for example, was made with
+            HTML/CSS/Javascript. I am currently creating some fun web
+            application using <strong>React</strong>. My final goal is to create
+            a fully functional web application that functions as a snippets
+            learning and sharing platform. During professional works, I learned
+            <strong>Docker, Git, Bash and Deployment skills</strong>.
+          </p>
+        </div>
       </div>
-      <div class="tag"  >
+      <div class="tag">
         <div class="parts part1" style="font-size:1.5vw;">
           <span>
             <span> 5</span> <br />
             Years Coding Experience
-        </span>
+          </span>
           <br />
           <i class="fa fa-laptop"></i>
         </div>
@@ -97,156 +126,261 @@
       </div>
     </section>
 
-    <section class="colorlib-work" data-section="work" id="projects">
-      <div class="colorlib-narrow-content">
-        <div class="row">
-          <div
-            class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-            data-animate-effect="fadeInLeft"
-          >
-            <h2 class="colorlib-heading animate-box">Recent Work</h2>
+    <section class="block" id="projects">
+      <h1 class="colorlib-heading animate-box">Personal Projects</h1>
+      <div class="card-group">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">E-commerce RestAPI</h5>
+            <br />
+            <dl class="row">
+              <dt class="col-sm-3">Description</dt>
+              <dd class="col-sm-9">
+                <em
+                  >Fully functional RestAPI for owners to make http requests to
+                  add/delete/update/retrive store and items
+                  <br />
+                  <br />
+                </em>
+              </dd>
+
+              <dt class="col-sm-3">Technology</dt>
+              <dd class="col-sm-9">
+                <ul>
+                  <li>Python/Flask/SQLalchemy/FlaskJWT</li>
+                  <li>Heroku/Postman</li>
+                  <br />
+                </ul>
+              </dd>
+
+              <dt class="col-sm-3 text-truncate">Difficulties Faced</dt>
+              <dd class="col-sm-9">
+                <ul>
+                  <li>Unable to register an account with encryption</li>
+                  <li>
+                    Inefficient and redundant SQL syntax make request not
+                    responsive
+                  </li>
+                </ul>
+              </dd>
+
+              <dt class="col-sm-3">Solutions</dt>
+              <dd class="col-sm-9">
+                Used FlaskJWT and SQLalchemy to handle these two questions
+                <br />
+                <br />
+              </dd>
+            </dl>
+
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="button"
+              aria-pressed="false"
+              autocomplete="off"
+              onclick="window.location.href = 'https://github.com/HuskyDanny/Rest_API_Store-Items';"
+            >
+              More Info
+            </button>
           </div>
         </div>
-        <div
-          class="row row-bottom-padded-sm animate-box"
-          data-animate-effect="fadeInLeft"
-        >
-        </div>
-        <div class="row">
-          <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft" id="projectOne">
-            <div
-              class="project"
-              style="background-image: url(./css/images/img-1.jpg);"
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Confusion Real-Time Chart</h5>
+            <br />
+            <dl class="row">
+              <dt class="col-sm-3">Description</dt>
+              <dd class="col-sm-9">
+                <em
+                  >Client to server model service provided for teachers and
+                  professors to understand students' confusion feedbacks better
+                </em>
+              </dd>
+
+              <dt class="col-sm-3">Technology</dt>
+              <dd class="col-sm-9">
+                <ul>
+                  <li>Python/Flask/Socketio</li>
+                  <li>HTML/CSS/Javascript</li>
+                  <li>Machine learning/Feature engineering</li>
+                </ul>
+              </dd>
+
+              <dt class="col-sm-3 text-truncate">Difficulties Faced</dt>
+              <dd class="col-sm-9">
+                <ul>
+                  <li>Not able to send data to front end in real-time</li>
+                  <li>Hard to generate accurate scores on confusion</li>
+                  <br />
+                </ul>
+              </dd>
+
+              <dt class="col-sm-3">Solutions</dt>
+              <dd class="col-sm-9">
+                Integrated Socketio technology into our packages, and used Azure
+                emotion API as a model to do ensembling
+                <br />
+                <br />
+              </dd>
+            </dl>
+
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="button"
+              aria-pressed="false"
+              autocomplete="off"
+              onclick="window.location.href = 'https://github.com/HuskyDanny/Real-Time-Perplexity-Level-Monitoring';"
             >
-              <div class="desc">
-                <div class="con">
-                  <h3><a href="work.html">Work 01</a></h3>
-                  <span>Confusion Detector</span> 
-                  <span>#Machine Learning #Web development #Full Stack</span>
-                  <p class="icon">
-                    <span
-                      ><a href="#"><i class="icon-share3"></i></a
-                    ></span>
-                  </p>
-                  <h3 class="work-btn1-header"><a class="work-btn1" href="https://github.com/HuskyDanny/Real-Time-Perplexity-Level-Monitoring">See More</a></h3>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 animate-box" data-animate-effect="fadeInRight" id="w1">
-            <div
-              class="project"
-              style="background-image: url(./css/images/img-2.jpg);"
-            >
-              <div class="desc">
-                <div class="con">
-                  <h3><a href="work.html">Work 02</a></h3>
-                  <span>Store-Items API</span>
-                  <span>#A backend interface mounted full power of Restful API</span>
-                  <p class="icon">
-                    <span
-                      ><a href="#"><i class="icon-share3"></i></a
-                    ></span>
-                  </p>
-                  <h3 class="work-btn1-header"><a class="work-btn1" href="https://github.com/HuskyDanny/Rest_API_Store-Items">See More</a></h3>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 animate-box" data-animate-effect="fadeInRight" id="w1">
-            <div
-              class="project"
-              style="background-image: url(./css/images/img-3.jpg);"
-            >
-              <div class="desc">
-                <div class="con">
-                  <h3><a href="work.html">Work 03</a></h3>
-                  <span>Real-Time Prometheus Monitoring</span>
-                  <span>#In production real-time monitoring system for Clobotics</span>
-                  <p class="icon">
-                    <span
-                      ><a href="#"><i class="icon-share3"></i></a
-                    ></span>
-                  </p>
-                  <h3 class="work-btn1-header"><a class="work-btn1" href="https://github.com/HuskyDanny/Prometheus">See More</a></h3>
-                </div>
-              </div>
-            </div>
+              More Info
+            </button>
           </div>
         </div>
+      </div>
+      <div class="card-group">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Tic-Tac-Toe</h5>
+            <p class="card-text">
+              Classic Game implemented by HTML/CSS/Javascript
+            </p>
+            <p class="card-text"></p>
+
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="button"
+              aria-pressed="false"
+              autocomplete="off"
+              onclick="window.location.href = 'https://github.com/HuskyDanny/tic-tac-toe';"
+            >
+              More Info
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body" id="card-1">
+            <h5 class="card-title">Titanic Challenge</h5>
+            <p class="card-text">
+              A Kaggle competition to predict the survival of passengers with
+              given data
+            </p>
+
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="button"
+              aria-pressed="false"
+              autocomplete="off"
+              onclick="window.location.href = './download/Titanic_Challenge.pdf'"
+            >
+              More Info
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Text Sentimental Application</h5>
+            <p class="card-text">
+              A simple sentimental application used to predict the sentiment
+              level of input sentence
+            </p>
+            <p class="card-text"></p>
+
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="button"
+              aria-pressed="false"
+              autocomplete="off"
+              onclick="window.location.href = 'http://junchenpan.pythonanywhere.com/';"
+            >
+              More Info
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
     <footer class="container-contact100" id="contact">
       <div class="wrap-contact100">
         <form class="contact100-form validate-form">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdK7UJHjorz4khM-fNQn686cd1FUlSZ0jYEufrYnO3LLbulqw/viewform?embedded=true" width="640" height="611" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdK7UJHjorz4khM-fNQn686cd1FUlSZ0jYEufrYnO3LLbulqw/viewform?embedded=true"
+            width="640"
+            height="611"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            >Loading...</iframe
+          >
         </form>
-  
-        <div class="contact100-more flex-col-c-m" style="background-image: url('images/bg-01.jpg');">
+
+        <div
+          class="contact100-more flex-col-c-m"
+          style="background-image: url('images/bg-01.jpg');"
+        >
           <h1 class="colorlib-heading animate-box">Contact</h1>
           <div class="flex-w size1 p-b-47">
             <div class="txt1 p-r-25">
               <span class="lnr lnr-map-marker"></span>
             </div>
-  
+
             <div class="flex-col size2">
               <span class="txt1 p-b-20">
                 Address
               </span>
-  
+
               <span class="txt2">
                 University Way, Seattle, WA, 98105
               </span>
             </div>
           </div>
-  
+
           <div class="dis-flex size1 p-b-47">
             <div class="txt1 p-r-25">
               <span class="lnr lnr-phone-handset"></span>
             </div>
-  
+
             <div class="flex-col size2">
               <span class="txt1 p-b-20">
                 Lets Talk
               </span>
-  
+
               <span class="txt3">
                 +1 206-499-3131
               </span>
             </div>
           </div>
-  
+
           <div class="dis-flex size1 p-b-47">
             <div class="txt1 p-r-25">
               <span class="lnr lnr-envelope"></span>
             </div>
-  
+
             <div class="flex-col size2">
               <span class="txt1 p-b-20">
                 My Email
               </span>
-  
+
               <span class="txt3">
                 junchenp1018@gmail.com
-  
               </span>
             </div>
           </div>
         </div>
       </div>
-    </footer>  
-    <script src="vendor/select2/select2.min.js"></script>
-    <script src="js/main.js"></script>
-    
-    
+    </footer>
+
     <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-    crossorigin="anonymous"
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
     />
     <link
-        href="https://fonts.googleapis.com/css?family=Lato:300|Montserrat:100"
-        rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato:300|Montserrat:100"
+      rel="stylesheet"
     />
   </body>
 </html>

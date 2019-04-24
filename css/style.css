@@ -316,3 +316,20 @@ header {
   text-decoration: none;
   display: block;
 }
+
+.card-group {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card button {
+  position: relative;
+  bottom: 2%;
+  margin-top: 10%;
+  display: block;
+}
+
+.block {
+  margin: 4% 0 4% 0;
+}
